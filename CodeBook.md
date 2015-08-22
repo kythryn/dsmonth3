@@ -12,70 +12,70 @@ The measurements concern the time, frequencey and various readings from the acce
 | --------------------------------------|:-------------:| -----|
 | subject                               | -             | Number from 1 to 30 |
 | activty                               | -             |  One of six factors: WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS, SITTING, STANDING, LAYING |
-| TimeBodyAcceleration-Mean-X           | are neat      |    g as a 128 element vector |
-| TimeBodyAcceleration-Mean-Y           | are neat      |    g as a 128 element vector |
-| TimeBodyAcceleration-Mean-Z           | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationSTD-X             | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationSTD-Y             | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationSTD-Z             | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationMean-X         | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationMean-Y         | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationMean-Z         | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationSTD-X          | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationSTD-Y          | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationSTD-Z          | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkMean-X        | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkMean-Y        | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkMean-Z        | right-aligned |    g as a 128 element vector |
-| TimeBodyAccelerationJerkSTD-X         | centered      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkSTD-Y         | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkSTD-Z         | are neat      |    g as a 128 element vector |
-| TimeBodyGyroMean-X                    | are neat      |    g as a 128 element vector |
-| TimeBodyGyroMean-Y                    | are neat      |    g as a 128 element vector |
-| TimeBodyGyroMean-Z                    | are neat      |    g as a 128 element vector |
-| TimeBodyGyroSTD-X                     | are neat      |    g as a 128 element vector |
-| TimeBodyGyroSTD-Y                     | are neat      |    g as a 128 element vector |
-| TimeBodyGyroSTD-Z                     | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkMean-X                | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkMean-Y                | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkMean-Z                | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkSTD-X                 | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkSTD-Y                 | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkSTD-Z                 | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationMagnitudeMean     | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationMagnitudeSTD      | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationMagnitudeMean  | are neat      |    g as a 128 element vector |
-| TimeGravityAccelerationMagnitureSTD   | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkMagnitureMean | are neat      |    g as a 128 element vector |
-| TimeBodyAccelerationJerkMagnitureSTD  | are neat      |    g as a 128 element vector |
-| TimeBodyGyroMagnitureMean             | are neat      |    g as a 128 element vector |
-| TimeBodyGyroMagnitureSTD              | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkMagnitudeMean         | are neat      |    g as a 128 element vector |
-| TimeBodyGyroJerkMagnitudeSTD          | are neat      |    g as a 128 element vector |
-| FreqBodyAcceleration-Mean-X           | are neat      |    g as a 128 element vector |
-| FreqBodyAcceleration-Mean-Y           | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationMean-Z            | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationSTD-X             | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationSTD-Y             | are neat      |    g as a 128 element vector |
-| FreqBodyAccerlationSTD-Z              | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkMean-X        | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkMean-Y        | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkMean-Z        | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkSTD-X         | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkSTD-Y         | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkSTD-Z         | are neat      |    g as a 128 element vector |
-| FreqBodyGyroMean-X                    | are neat      |    g as a 128 element vector |
-| FreqBodyGyroMean-Y                    | are neat      |    g as a 128 element vector |
-| FreqBodyGyroMean-Z                    | are neat      |    g as a 128 element vector |
-| FreqBodyGyroSTD-X                     | are neat      |    g as a 128 element vector |
-| FreqBodyGyroSTD-Y                     | are neat      |    g as a 128 element vector |
-| FreqBodyGyroSTD-Z                     | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationMagnitudeMean     | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationMagnitudeSTD      | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkMagnitureMean | are neat      |    g as a 128 element vector |
-| FreqBodyAccelerationJerkMagnitureSTD  | are neat      |    g as a 128 element vector |
-| FreqBodyGyroMagnitureMean             | are neat      |    g as a 128 element vector |
-| FreqBodyGyroMagnitureSTD              | are neat      |    g as a 128 element vector |
-| FreqBodyGyroJerkMagnitudeMean         | are neat      |    g as a 128 element vector |
-| FreqBodyGyroJerkMagnitudeSTD          | are neat      |    g as a 128 element vector |
+| TimeBodyAcceleration-Mean-X           | tBodyAcc-mean()-X     |    g as a 128 element vector |
+| TimeBodyAcceleration-Mean-Y           | tBodyAcc-mean()-Y      |    g as a 128 element vector |
+| TimeBodyAcceleration-Mean-Z           | tBodyAcc-mean()-Z      |    g as a 128 element vector |
+| TimeBodyAccelerationSTD-X             | tBodyAcc-std()-X      |    g as a 128 element vector |
+| TimeBodyAccelerationSTD-Y             | tBodyAcc-std()-Y      |    g as a 128 element vector |
+| TimeBodyAccelerationSTD-Z             | tBodyAcc-std()-Z      |    g as a 128 element vector |
+| TimeGravityAccelerationMean-X         | tGravityAcc-mean()-X       |    g as a 128 element vector |
+| TimeGravityAccelerationMean-Y         | tGravityAcc-mean()-Y     |    g as a 128 element vector |
+| TimeGravityAccelerationMean-Z         | tGravityAcc-mean()-Z       |    g as a 128 element vector |
+| TimeGravityAccelerationSTD-X          | tGravityAcc-std()-X     |    g as a 128 element vector |
+| TimeGravityAccelerationSTD-Y          | tGravityAcc-std()-Y      |    g as a 128 element vector |
+| TimeGravityAccelerationSTD-Z          | tGravityAcc-std()-Z     |    g as a 128 element vector |
+| TimeBodyAccelerationJerkMean-X        | tBodyAccJerk-mean()-X      |    g as a 128 element vector |
+| TimeBodyAccelerationJerkMean-Y        | tBodyAccJerk-mean()-Y      |    g as a 128 element vector |
+| TimeBodyAccelerationJerkMean-Z        | tBodyAccJerk-mean()-Z |    g as a 128 element vector |
+| TimeBodyAccelerationJerkSTD-X         | tBodyAccJerk-std()-X     |    g as a 128 element vector |
+| TimeBodyAccelerationJerkSTD-Y         | tBodyAccJerk-std()-Y     |    g as a 128 element vector |
+| TimeBodyAccelerationJerkSTD-Z         | tBodyAccJerk-std()-Z      |    g as a 128 element vector |
+| TimeBodyGyroMean-X                    | tBodyGyro-mean()-X     |    g as a 128 element vector |
+| TimeBodyGyroMean-Y                    | tBodyGyro-mean()-Y     |    g as a 128 element vector |
+| TimeBodyGyroMean-Z                    | tBodyGyro-mean()-Z     |    g as a 128 element vector |
+| TimeBodyGyroSTD-X                     | tBodyGyro-std()-X      |    g as a 128 element vector |
+| TimeBodyGyroSTD-Y                     | tBodyGyro-std()-Y     |    g as a 128 element vector |
+| TimeBodyGyroSTD-Z                     | tBodyGyro-std()-Z    |    g as a 128 element vector |
+| TimeBodyGyroJerkMean-X                | tBodyGyroJerk-mean()-X     |    g as a 128 element vector |
+| TimeBodyGyroJerkMean-Y                | tBodyGyroJerk-mean()-Y      |    g as a 128 element vector |
+| TimeBodyGyroJerkMean-Z                | tBodyGyroJerk-mean()-Z     |    g as a 128 element vector |
+| TimeBodyGyroJerkSTD-X                 | tBodyGyroJerk-std()-X      |    g as a 128 element vector |
+| TimeBodyGyroJerkSTD-Y                 | tBodyGyroJerk-std()-Y     |    g as a 128 element vector |
+| TimeBodyGyroJerkSTD-Z                 | tBodyGyroJerk-std()-Z      |    g as a 128 element vector |
+| TimeBodyAccelerationMagnitudeMean     | tBodyAccMag-mean()     |    g as a 128 element vector |
+| TimeBodyAccelerationMagnitudeSTD      | tBodyAccMag-std()      |    g as a 128 element vector |
+| TimeGravityAccelerationMagnitudeMean  | tGravityAccMag-mean()     |    g as a 128 element vector |
+| TimeGravityAccelerationMagnitureSTD   | tGravityAccMag-std()     |    g as a 128 element vector |
+| TimeBodyAccelerationJerkMagnitureMean | tBodyAccJerkMag-mean()      |    g as a 128 element vector |
+| TimeBodyAccelerationJerkMagnitureSTD  | tBodyAccJerkMag-std()      |    g as a 128 element vector |
+| TimeBodyGyroMagnitureMean             | tBodyGyroMag-mean()      |    g as a 128 element vector |
+| TimeBodyGyroMagnitureSTD              | tBodyGyroMag-std()     |    g as a 128 element vector |
+| TimeBodyGyroJerkMagnitudeMean         | tBodyGyroJerkMag-mean()     |    g as a 128 element vector |
+| TimeBodyGyroJerkMagnitudeSTD          | tBodyGyroJerkMag-std()     |    g as a 128 element vector |
+| FreqBodyAcceleration-Mean-X           | fBodyAcc-mean()-X     |    g as a 128 element vector |
+| FreqBodyAcceleration-Mean-Y           | fBodyAcc-mean()-Y     |    g as a 128 element vector |
+| FreqBodyAccelerationMean-Z            | fBodyAcc-mean()-Z     |    g as a 128 element vector |
+| FreqBodyAccelerationSTD-X             | fBodyAcc-std()-X     |    g as a 128 element vector |
+| FreqBodyAccelerationSTD-Y             | fBodyAcc-std()-Y      |    g as a 128 element vector |
+| FreqBodyAccerlationSTD-Z              | fBodyAcc-std()-Z      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkMean-X        | fBodyAccJerk-mean()-X      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkMean-Y        | fBodyAccJerk-mean()-Y      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkMean-Z        | fBodyAccJerk-mean()-Z      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkSTD-X         | fBodyAccJerk-std()-X      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkSTD-Y         | fBodyAccJerk-std()-Y     |    g as a 128 element vector |
+| FreqBodyAccelerationJerkSTD-Z         | fBodyAccJerk-std()-Z     |    g as a 128 element vector |
+| FreqBodyGyroMean-X                    | fBodyGyro-mean()-X     |    g as a 128 element vector |
+| FreqBodyGyroMean-Y                    | fBodyGyro-mean()-Y    |    g as a 128 element vector |
+| FreqBodyGyroMean-Z                    | fBodyGyro-mean()-Z     |    g as a 128 element vector |
+| FreqBodyGyroSTD-X                     | fBodyGyro-std()-X      |    g as a 128 element vector |
+| FreqBodyGyroSTD-Y                     | fBodyGyro-std()-Y      |    g as a 128 element vector |
+| FreqBodyGyroSTD-Z                     | fBodyGyro-std()-Z     |    g as a 128 element vector |
+| FreqBodyAccelerationMagnitudeMean     | fBodyAccMag-mean()     |    g as a 128 element vector |
+| FreqBodyAccelerationMagnitudeSTD      | fBodyAccMag-std()      |    g as a 128 element vector |
+| FreqBodyAccelerationJerkMagnitureMean | fBodyBodyAccJerkMag-mean()     |    g as a 128 element vector |
+| FreqBodyAccelerationJerkMagnitureSTD  | fBodyBodyAccJerkMag-std()      |    g as a 128 element vector |
+| FreqBodyGyroMagnitureMean             | fBodyBodyGyroMag-mean()    |    g as a 128 element vector |
+| FreqBodyGyroMagnitureSTD              | fBodyBodyGyroMag-std()      |    g as a 128 element vector |
+| FreqBodyGyroJerkMagnitudeMean         | fBodyBodyGyroMag-std()     |    g as a 128 element vector |
+| FreqBodyGyroJerkMagnitudeSTD          | fBodyBodyGyroMag-std()     |    g as a 128 element vector |
 
