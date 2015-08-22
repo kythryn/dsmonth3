@@ -1,4 +1,4 @@
-This is the code book for the file m3working.r
+This is the code book for the file run_analysis.r and tidydata.txt.
 
 Running the file produces a table called tidydata.txt. This can be read back into r using read.table.
 
