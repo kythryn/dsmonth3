@@ -5,7 +5,6 @@ Running the file produces a table called tidydata.txt. This can be read back int
 The tidy table contains information about the means and standard deviations for a number of measurements taken from the accelerometer of the Samsung Galaxy S smartphone.
 The measurements concern the time, frequencey and various readings from the accelerometer. The codebook for the original data can be seen here.
 
-Units of g as a 128 element vector
 
 
 
