@@ -1,4 +1,4 @@
-This is the Read Me for the tidydata.txt file.
+This is the Read Me for the tidydata.txt file and run_analysis.r.
 
 The file was created from the Samsung S3 Data Set which can be seen [here](https://github.com/kythryn/dsmonth3/tree/master/UCI%20HAR%20Dataset%202). The steps to create the data set are as follows.
 The step numbers are also included as comments in the code.
