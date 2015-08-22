@@ -10,8 +10,8 @@ The measurements concern the time, frequencey and various readings from the acce
 
 | Column                                | Name in data set           | Unit |
 | --------------------------------------|:-------------:| -----|
-| Subject                               | -             | Number from 1 to 30 |
-| Activty                               | -             |  One of six factors: WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS, SITTING, STANDING LAYING |
+| subject                               | -             | Number from 1 to 30 |
+| activty                               | -             |  One of six factors: WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS, SITTING, STANDING LAYING |
 | TimeBodyAcceleration-Mean-X           | are neat      |    g as a 128 element vector |
 | TimeBodyAcceleration-Mean-Y           | are neat      |    g as a 128 element vector |
 | TimeBodyAcceleration-Mean-Z           | are neat      |    g as a 128 element vector |
