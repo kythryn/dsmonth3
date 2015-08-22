@@ -1,4 +1,5 @@
-setwd("./ds")
+#Step 1: reading in the data
+
 testX_test <- read.table("UCI HAR Dataset 2/test/X_test.txt")
 testSubject_test <- read.table("UCI HAR Dataset 2/test/subject_test.txt")
 testY_test <- read.table("UCI HAR Dataset 2/test/y_test.txt")
@@ -9,6 +10,9 @@ trainSubject_train <- read.table("UCI HAR Dataset 2/activity_labels.txt")
 trainSubject_train <- read.table("UCI HAR Dataset 2/train/subject_train.txt")
 activitylabels <- read.table("UCI HAR Dataset 2/activity_labels.txt")
 features <- read.table("UCI HAR Dataset 2/features.txt")
+
+#Step 2: Constructing the data table
+
 combTest <- cbind(testSubject_test, testY_test, testX_test)
 combTrain <- cbind(trainSubject_train, trainY_train, trainX_train)
 combTT <- rbind(combTest, combTrain)
@@ -16,6 +20,9 @@ newcolnames <- features[,2]
 newcolnames <- as.vector(newcolnames)
 newcolnames <- c("subject", "activity", newcolnames)
 colnames(combTT) <- c(newcolnames)
+
+#Step 3: Extracting only mean and standard deviation columns
+
 meanSDcols <- c(1, 2, 3:8, 43:48, 83:88, 123:128, 163:168, 203, 204, 216, 217, 229, 230, 242, 243, 255, 256, 268:273, 347:352, 426:431, 505, 506, 518, 519, 531, 532, 544, 545)
 meanSDTable <- combTT[,meanSDcols]
 activity.names <- as.character(activitylabels[,2])
@@ -23,9 +30,13 @@ meanSDTable[,2] <- activity.names[meanSDTable[,2]]
 meanSDTable[,2] <- as.factor(meanSDTable[,2])
 meanSDTable[,1] <- as.integer(meanSDTable[,1])
 
-finalcolnames <- c("Subject", "Activity", "TimeBodyAcceleration-Mean-X", "TimeBodyAcceleration-Mean-Y", "TimeBodyAccelerationMean-Z", "TimeBodyAccelerationSTD-X", "TimeBodyAccelerationSTD-Y", "TimeBodyAccerlationSTD-Z", "TimeGravityAccelerationMean-X", "TimeGravityAccelerationMean-Y", "TimeGravityAccelerationMean-Z", "TimeGravityAcclerationSTD-X", "TimeGravityAccelerationSTD-Y", "TimeGravityAccelerationSTD-Z", "TimeBodyAccelerationJerkMean-X", "TimeBodyAccelerationJerkMean-Y", "TimeBodyAccelerationJerkMean-Z", "TimeBodyAccelerationJerkSTD-X", "TimeBodyAccelerationJerkSTD-Y", "TimeBodyAccelerationJerkSTD-Z", "TimeBodyGyroMean-X", "TimeBodyGyroMean-Y", "TimeBodyGyroMean-Z", "TimeBodyGyroSTD-X", "TimeBodyGyroSTD-Y", "TimeBodyGyroSTD-Z", "TimeBodyGyroJerkMean-X", "TimeBodyGyroJerkMean-Y", "TimeBodyGyroJerkMean-Z", "TimeBodyGyroJerkSTD-X", "TimeBodyGyroJerkSTD-Y", "TimeBodyGyroJerkSTD-Z", "TimeBodyAccelerationMagnitudeMean", "TimeBodyAccelerationMagnitudeSTD", "TimeGravityAccelerationMagnitudeMean", "TimeGravityAccelerationMagnitureSTD", "TimeBodyAccelerationJerkMagnitureMean", "TimeBodyAccelerationJerkMagnitureSTD", "TimeBodyGyroMagnitureMean", "TimeBodyGyroMagnitureSTD", "TimeBodyGyroJerkMagnitudeMean", "TimeBodyGyroJerkMagnitudeSTD", "FreqBodyAcceleration-Mean-X", "FreqBodyAcceleration-Mean-Y", "FreqBodyAccelerationMean-X", "FreqBodyAccelerationSTD-X", "FreqBodyAccelerationSTD-Y", "FreqBodyAccerlationSTD-Z", "FreqBodyAccelerationJerkMean-X", "FreqBodyAccelerationJerkMean-Y", "FreqBodyAccelerationJerkMean-Z", "FreqBodyAccelerationJerkSTD-X", "FreqBodyAccelerationJerkSTD-Y", "FreqBodyAccelerationJerkSTD-Z", "FreqBodyGyroMean-X", "FreqBodyGyroMean-Y", "FreqBodyGyroMean-Z", "FreqBodyGyroSTD-X", "FreqBodyGyroSTD-Y", "FreqBodyGyroSTD-Z", "FreqBodyAccelerationMagnitudeMean", "FreqBodyAccelerationMagnitudeSTD", "FreqBodyAccelerationJerkMagnitureMean", "FreqBodyAccelerationJerkMagnitureSTD", "FreqBodyGyroMagnitureMean", "FreqBodyGyroMagnitureSTD", "FreqBodyGyroJerkMagnitudeMean", "FreqBodyGyroJerkMagnitudeSTD" )
+#Step 4: Adding sensible column names
+
+finalcolnames <- c("subject", "activity", "TimeBodyAcceleration-Mean-X", "TimeBodyAcceleration-Mean-Y", "TimeBodyAccelerationMean-Z", "TimeBodyAccelerationSTD-X", "TimeBodyAccelerationSTD-Y", "TimeBodyAccerlationSTD-Z", "TimeGravityAccelerationMean-X", "TimeGravityAccelerationMean-Y", "TimeGravityAccelerationMean-Z", "TimeGravityAccelerationSTD-X", "TimeGravityAccelerationSTD-Y", "TimeGravityAccelerationSTD-Z", "TimeBodyAccelerationJerkMean-X", "TimeBodyAccelerationJerkMean-Y", "TimeBodyAccelerationJerkMean-Z", "TimeBodyAccelerationJerkSTD-X", "TimeBodyAccelerationJerkSTD-Y", "TimeBodyAccelerationJerkSTD-Z", "TimeBodyGyroMean-X", "TimeBodyGyroMean-Y", "TimeBodyGyroMean-Z", "TimeBodyGyroSTD-X", "TimeBodyGyroSTD-Y", "TimeBodyGyroSTD-Z", "TimeBodyGyroJerkMean-X", "TimeBodyGyroJerkMean-Y", "TimeBodyGyroJerkMean-Z", "TimeBodyGyroJerkSTD-X", "TimeBodyGyroJerkSTD-Y", "TimeBodyGyroJerkSTD-Z", "TimeBodyAccelerationMagnitudeMean", "TimeBodyAccelerationMagnitudeSTD", "TimeGravityAccelerationMagnitudeMean", "TimeGravityAccelerationMagnitureSTD", "TimeBodyAccelerationJerkMagnitureMean", "TimeBodyAccelerationJerkMagnitureSTD", "TimeBodyGyroMagnitureMean", "TimeBodyGyroMagnitureSTD", "TimeBodyGyroJerkMagnitudeMean", "TimeBodyGyroJerkMagnitudeSTD", "FreqBodyAcceleration-Mean-X", "FreqBodyAcceleration-Mean-Y", "FreqBodyAccelerationMean-Z", "FreqBodyAccelerationSTD-X", "FreqBodyAccelerationSTD-Y", "FreqBodyAccerlationSTD-Z", "FreqBodyAccelerationJerkMean-X", "FreqBodyAccelerationJerkMean-Y", "FreqBodyAccelerationJerkMean-Z", "FreqBodyAccelerationJerkSTD-X", "FreqBodyAccelerationJerkSTD-Y", "FreqBodyAccelerationJerkSTD-Z", "FreqBodyGyroMean-X", "FreqBodyGyroMean-Y", "FreqBodyGyroMean-Z", "FreqBodyGyroSTD-X", "FreqBodyGyroSTD-Y", "FreqBodyGyroSTD-Z", "FreqBodyAccelerationMagnitudeMean", "FreqBodyAccelerationMagnitudeSTD", "FreqBodyAccelerationJerkMagnitureMean", "FreqBodyAccelerationJerkMagnitureSTD", "FreqBodyGyroMagnitureMean", "FreqBodyGyroMagnitureSTD", "FreqBodyGyroJerkMagnitudeMean", "FreqBodyGyroJerkMagnitudeSTD" )
 
 colnames(meanSDTable) <- finalcolnames
+
+#Step 5: Subsetting by combinations of subject and activity
 
 W1 <- colMeans(meanSDTable[meanSDTable$subject==1 & meanSDTable$activity=="WALKING",][3:68])
 WU1 <- colMeans(meanSDTable[meanSDTable$subject==1 & meanSDTable$activity=="WALKING_UPSTAIRS",][3:68])
@@ -208,6 +219,8 @@ SI30 <- colMeans(meanSDTable[meanSDTable$subject==30 & meanSDTable$activity=="SI
 ST30 <- colMeans(meanSDTable[meanSDTable$subject==30 & meanSDTable$activity=="STANDING",][3:68])
 L30 <- colMeans(meanSDTable[meanSDTable$subject==30 & meanSDTable$activity=="LAYING",][3:68])
 
+#Step 6: Creating a new table from the subsets.
+
 subjectseq <- seq(1,30,1)
 subjectcol <- rep(subjectseq,each=6)
 activityseq <- c("WALKING", "WALKING_UPSTAIRS", "WALKING DOWNSTAIRS", "SITIING", "STANDING", "LAYING")
@@ -216,6 +229,9 @@ activitycol <- rep(activityseq, times=30)
 meanbind <- data.frame()
 meanbind <- rbind(W1, WU1, WD1, SI1, ST1, L1, W2, WU2, WD2, SI2, ST2, L2, W3, WU3, WD3, SI3, ST3, L3, W4, WU4, WD4, SI4, ST4, L4, W5, WU5, WD5, SI5, ST5, L5, W6, WU6, WD6, SI6, ST6, L6, W7, WU7, WD7, SI7, ST7, L7, W8, WU8, WD8, SI8, ST8, L8, W9, WU9, WD9, SI9, ST9, L9, W10, WU10, WD10, SI10, ST10, L10, W11, WU11, WD11, SI11, ST11, L11, W12, WU12, WD12, SI12, ST12, L12,W13, WU13, WD13, SI13, ST13, L13, W14, WU14, WD14, SI14, ST14, L14, W15, WU15, WD15, SI15, ST15, L15, W16, WU16, WD16, SI16, ST16, L16, W17, WU17, WD17, SI17, ST17, L17, W18, WU18, WD18, SI18, ST18, L18, W19, WU19, WD19, SI19, ST19, L19, W20, WU20, WD20, SI20, ST20, L20,W21, WU21, WD21, SI21, ST21, L21, W22, WU22, WD22, SI22, ST22, L22, W23, WU23, WD23, SI23, ST23, L23, W24, WU24, WD24, SI24, ST24, L24,W25, WU25, WD25, SI25, ST25, L25, W26, WU26, WD26, SI26, ST26, L26, W27, WU27, WD27, SI27, ST27, L27, W28, WU28, WD28, SI28, ST28, L28, W29, WU29, WD29, SI29, ST29, L29, W30, WU30, WD30, SI30, ST30, L30)
 
+
 finaltable <-cbind.data.frame(subjectcol, activitycol, meanbind)
+
+#Step 7: Outputting table file
 
 write.table(finaltable, "tidydata.txt", row.names = FALSE)
