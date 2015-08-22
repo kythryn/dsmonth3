@@ -3,7 +3,7 @@ This is the code book for the file m3working.r
 Running the file produces a table called tidydata.txt. This can be read back into r using read.table.
 
 The tidy table contains information about the means and standard deviations for a number of measurements taken from the accelerometer of the Samsung Galaxy S smartphone.
-The measurements concern the time, frequencey and various readings from the accelerometer. The codebook for the original data can be seen here.
+The measurements concern the time, frequencey and various readings from the accelerometer. The codebook for the original data can be seen [here](https://github.com/kythryn/dsmonth3/tree/master/UCI%20HAR%20Dataset%202).
 
 
 
